@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!-- Input Parameters
+suite name = <any>
+parallel = <tests>/<true> or <false>
+test name = <any>
+allow-return-values=<true> or <false> 
+class name = <package name>.<class name>
+-->
+
+<suite name="ZohoSuite" parallel="tests">
+	
+	<test name="Login Test" allow-return-values="true">
+		<classes>
+			<class name="com.qtpselenium.zoho.project.testcases.LoginTest3" />
+		</classes>
+	</test>
+<!-- 
+	<test name="Lead Test" allow-return-values="true">
+		<classes>
+			<class name="com.qtpselenium.zoho.project.testcases.LeadTest" />
+		</classes>
+	</test>
+	
+	<test name="Potential Test" allow-return-values="true">
+		<classes>
+			<class name="com.qtpselenium.zoho.project.testcases.PotentialTest" />
+		</classes>
+	</test>
+	
+		<test name="Login Test 3" allow-return-values="true">
+		<classes>
+			<class name="com.qtpselenium.zoho.project.testcases.LoginTest3" />
+		</classes>
+	</test>
+	-->
+</suite>
+

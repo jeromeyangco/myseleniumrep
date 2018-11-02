@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!-- Input Parameters
+suite name = <any>
+parallel = <tests>/<true> or <false>
+test name = <any>
+allow-return-values=<true> or <false> 
+class name = <package name>.<class name>
+-->
+
+<suite name="TestNG Test Suite - TestA, TestB, TestC" parallel="tests">
+	<test name="TestA" allow-return-values="true">
+		<classes>
+			<class name="com.qtpselenium.core.ddf.testcases.DummyTestA" />
+		</classes>
+	</test>
+
+	<test name="TestB" allow-return-values="true">
+		<classes>
+			<class name="com.qtpselenium.core.ddf.testcases.DummyTestB" />
+		</classes>
+	</test>
+	
+	<test name="TestC" allow-return-values="true">
+		<classes>
+			<class name="com.qtpselenium.core.ddf.testcases.DummyTestC" />
+		</classes>
+	</test>
+</suite>
+
